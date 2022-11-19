@@ -17,5 +17,11 @@ public class App
         
         Student student=(Student)context.getBean("student1");
         System.out.println(student);
+        
+        System.out.println("++++++++++++++++++++++++++++++++++");
+        
+      //  Student student2=(Student)context.getBean("student2");
+        
+    //    System.out.println(student2);
     }
 }
