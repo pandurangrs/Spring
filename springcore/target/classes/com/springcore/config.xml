@@ -8,18 +8,29 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.springcore.Student" id="student1">
-		<property name="studentId">
-			<value>1</value>
-		</property>
 
-		<property name="studentName">
-			<value>Pandurang</value>
-		</property>
 
-		<property name="studentAddress">
-			<value>Khirvire</value>
-		</property>
-	</bean>
+	<!--1 PRIMITIVE TYPE -->
+	<!-- 1. using value as a element -->
+	<!-- <bean class="com.springcore.Student" id="student1"> <property name="studentId"> 
+		<value>1</value> </property> <property name="studentName"> <value>Pandurang</value> 
+		</property> <property name="studentAddress"> <value>Khirvire</value> </property> 
+		</bean> -->
+
+	<!-- 2. using value as a attribute -->
+	<!-- <bean class="com.springcore.Student" id="student1"> <property name="studentId" 
+		value="1"/> <property name="studentName" value="Om"/> <property name="studentAddress" 
+		value="Bhagur"></property> </bean> <bean class="com.springcore.Student" id="student2"> 
+		<property name="studentId" value="2"/> <property name="studentName" value="Jay"/> 
+		<property name="studentAddress" value="Khardi"></property> </bean> -->
+
+	<!--3. Using P Schema -->
+	<bean class="com.springcore.Student" id="student1" p:studentId="1"
+		p:studentName="Om" p:studentAddress="Khirvire" />
+
+	<bean class="com.springcore.Student" id="student2" p:studentId="2"
+		p:studentName="jay" p:studentAddress="Kharadi" />
+
+
 
 </beans>
