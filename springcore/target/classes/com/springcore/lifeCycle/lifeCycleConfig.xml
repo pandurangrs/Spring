@@ -7,11 +7,22 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <!-- Enable all annotation -->
+ <!-- 
+ <context:annotation-config/>
+  -->
 
-
+<!-- 
 	<bean class="com.springcore.lifeCycle.Samosa" name="s1"
 		p:price="8" init-method="init" destroy-method="destroy" />
 
 
 	<bean class="com.springcore.lifeCycle.Pepsi" name="p1" p:price="9"/>
+ -->
+	
+	<bean class="com.springcore.lifeCycle.Example" name="e1" p:subject="Marathi"></bean>
+	
+	<!-- common annotation enable -->
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
 </beans>
