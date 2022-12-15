@@ -21,7 +21,8 @@ public class TestLifeCycle {
 //		Pepsi p1=(Pepsi)context.getBean("p1");		
 //		System.out.println(p1);
 		
-		Example e1 = (Example)context.getBean("e1");
+		Example e1 = (Example)context.getBean("e1"
+				+ "");
 		
 		System.out.println(e1);
 		
