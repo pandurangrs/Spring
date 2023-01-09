@@ -7,14 +7,17 @@
 
 <!-- 
 <bean class="com.springcore.autowire.Emp" name="emp1" autowire="byName"/>
- -->
+ --> 
+ 
  
 
-<!-- 
- <bean class="com.springcore.autowire.Emp" name="emp1" autowire="byType"/>
- -->
  
+ <bean class="com.springcore.autowire.Emp" name="emp1" autowire="byType"/>
+
+ 
+ <!-- 
   <bean class="com.springcore.autowire.Emp" name="emp1" autowire="constructor"/>
+  -->
  
  
  

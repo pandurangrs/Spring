@@ -16,6 +16,7 @@ public class TestCollection {
 		System.out.println(emp.getPhones());
 		System.out.println(emp.getCourse());
 		System.out.println(emp.getProps());
+		System.out.println(emp.getPhones().getClass().getName());
 		
 	}
 }
